@@ -17,7 +17,7 @@ class Pet {
     var escala: Bool = true
     
     func latidoAlto() {
-        print("Ele está latindo alto")
+        print("Ele late alto")
     }
     
     func correAtrasDoRabo() {
@@ -56,12 +56,12 @@ class Bike {
     var grupoTransmissao: String = "Shimano Deore"
     var eEletrica: Bool = false
     
-    func encherOPneu() {
-        print("O Farol está ligado")
+    func recarregarBateria() {
+        print("Recarregar a bateria da e-bike")
     }
     
-    func ligarOCarro() {
-        print("O carro está ligado")
+    func desempenarRodas() {
+        print("As rodas precisam ser desenpenadas")
     }
     
 }
