@@ -12,7 +12,7 @@ class Pet {
     
     var cor: String = "Preto"
     var especie: String = "Felino"
-    var raca: Int = 2
+    var raca: String = "Siames"
     var bigode: Bool = true
     var escala: Bool = true
     
