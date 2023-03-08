@@ -65,3 +65,10 @@ class Bike {
     }
     
 }
+
+var minhaBike: Bike = Bike()
+
+print(minhaBike.marca)
+minhaBike.marca = "Specialized"
+print(minhaBike.marca)
+print(minhaBike.rodas)
