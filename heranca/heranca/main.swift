@@ -62,3 +62,6 @@ class Young: Human {
     }
 
 }
+
+
+var vitor: Young = Young(piercing: true, tatto: true, sense: "Rapaz ajuizado", skin: "white", hair: "Dark", age: 27.0)
