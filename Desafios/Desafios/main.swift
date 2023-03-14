@@ -11,12 +11,61 @@ import Foundation
 
 // Crie uma classe chamada "Livro" que tenha as propriedades "titulo", "autor" e "preço". Em seguida, crie uma subclasse chamada "LivroDigital" que herde da classe "Livro" e tenha uma propriedade adicional chamada "formato". Crie dois construtores para a classe "LivroDigital". O primeiro deve aceitar o "formato" como parâmetro enquanto o segundo não deve aceitá-lo. Quando o "formato" não for fornecido, defina-o como "PDF". Defina então um método chamado "analisarPreco" que receba o "titulo" e o "preço" do livro como parâmetros e imprima "Livro caro" se o preço for maior que 25 ou "Livro barato", caso contrário.
 
+class Livro {
+    
+    var Titulo: String = ""
+    var Autor: String = ""
+    var Preço: Int = 0
+    
+}
+
+class LivroDigital: Livro {
+    
+    var formato: String
+    
+    init (formato: String) {
+    self.formato = formato
+    }
+    
+    func analisarPreco (_ Titulo: String,_ Preço: Int) -> String {
+        if Preço > 25 {
+            return "Livro caro"
+        } else {
+            return "Livro barato"
+        }
+        
+        print(analisarPreco("Código Limpo", 15))
+    }
+}
+
+
 
 
  //Crie uma classe chamada "FormaGeometrica" com as propriedades "largura" e "altura". Em seguida, crie uma subclasse chamada "Retangulo" que tenha um método "calcularArea" que calcula a área do retângulo (largura * altura). Certifique-se de que o construtor da subclasse chame o construtor da classe pai para definir a largura e a altura e imprima o resultado.
  
+class FormaGeometrica {
+    
+    var largura: Double
+    var altura: Double
+     
+    init(largura: Double, altura: Double) {
+        self.largura = largura
+        self.altura = altura
+    }
+    
+}
 
-
+class Retangulo: FormaGeometrica {
+    
+    
+    func calcularArea (largura: Double, altura: Double) -> Double {
+        var result: Double = 0
+        result = largura * altura
+        return result
+    }
+    
+}
+    
  //Crie uma classe chamada "ContaBancaria" com as propriedades "saldo" e "tipo". Em seguida, crie uma subclasse chamada "ContaCorrente" que tenha uma propriedade adicional chamada "limite" e um método "atualizarSaldo" que adiciona o limite ao saldo da conta. Certifique-se de que o construtor da subclasse chame o construtor da classe pai para definir o "saldo" e o "tipo". Você pode ainda criar um método "imprimirSaldo" que imprime o saldo atualizado da conta.
 
 
