@@ -75,9 +75,9 @@ class Retangulo: FormaGeometrica {
 
 /* Escreva uma função chamada "somaArray" que receba um array de números inteiros como parâmetro e retorne a soma de todos os elementos do array.
  Exemplo de entrada: [1, 2, 3, 4, 5]
- Saída esperada: 15
+ Saída esperada: 15 */
  
- Escreva uma função chamada "elefantesIncomodam" que receba um número inteiro positivo n como parâmetro e retorne a letra correspondente da música "Um Elefante Incomoda Muita Gente" até o n-ésimo elefante.
+ /* Escreva uma função chamada "elefantesIncomodam" que receba um número inteiro positivo n como parâmetro e retorne a letra correspondente da música "Um Elefante Incomoda Muita Gente" até o n-ésimo elefante.
  Exemplo de entrada: 5
  Saída esperada:
  1 elefante incomoda muita gente
@@ -90,7 +90,7 @@ class Retangulo: FormaGeometrica {
 
 
 
-/*  Escreva uma função chamada "solucaoEquacaoSegundoGrau" que receba três números reais a, b e c como parâmetros e retorne as soluções da equação ax² + bx + c = 0, ou uma mensagem indicando que não há soluções reais.
+/* Escreva uma função chamada "solucaoEquacaoSegundoGrau" que receba três números reais a, b e c como parâmetros e retorne as soluções da equação ax² + bx + c = 0, ou uma mensagem indicando que não há soluções reais.
  Exemplo de entrada: a = 2, b = 5, c = 3
  Saída esperada: (-1.5, -1)
  Dica: A solução da equação do segundo grau pode ser encontrada usando a fórmula de Bhaskara, que é:
@@ -115,3 +115,59 @@ número.
   
  Exemplo de entrada: 10
  Saída esperada: 17 (pois 2 + 3 + 5 + 7 = 17) */
+
+
+//MARK: - POLIMORFISMO, ENCAPSULAMENTO
+
+// 1) Exercicio Vendedor:
+
+/* Um vendedor de loja possui nome, idade, cpf, saldo em conta e ele vende em sua loja ternos, vestidos e bonés, defina um método(quantidadeDePecas: Int, tipoDePeça: String).
+
+- Cada terno custa 400 reais, caso o cliente compre 3 ou mais ternos ele recebe 50 por cento de desconto em cada
+ 
+ - cada vestido custa 900 reais, caso o cliente compre 5 ou mais vestidos ele ganha um véu de noiva de brinde
+ 
+ - cada boné custa 50 reais, e para cada 2 bonés vendidos, o terceiro é grátis, logo não haverá lucro
+
+
+----------------------------- encapsule todos os métodos necessarios ---------------------- */
+
+
+
+
+
+
+
+// 2) Exercicio Funcionários:
+
+/*
+ 
+ - Defina uma classe funcionarios com nome, salario e cpf.
+ 
+ - Depois defina as classes programador que tem plataforma de trabalho (ex: android, web e iOS) e uma classe designer que tem ferramenta preferida (ex: Photoshop, sketch, Gimp).
+ 
+-  Ambos tem um bonus anual baseado no salário, programador recebe 20% e designer recebe 15%, faça um método que calcule o bonus anual e mostre o valor do bonus na tela.
+
+-  Use polimorfismo para resolver este problema.  */
+
+
+
+
+
+
+
+// 3) Exercicio Veículo:
+
+/*
+ 
+ - Defina uma classe veículo com cor, preço e quantidade de passageiros.
+ 
+ 
+- depois defina as classes Carro que tem tamanho das rodas e Avião que tem piloto e companhia aérea.
+ 
+- Queremos descobrir a quantidade de combustível que cada um dos veículos gasta por viagem, defina um método que recebe como parâmetro a distancia em KM e calcule a quantidade de combustivel.
+ 
+- FORMULA Carro: tamanho das rodas * quantidade de passageiros * distancia.
+ 
+          Aviao: quantidade de passageiros * distancia */
+
