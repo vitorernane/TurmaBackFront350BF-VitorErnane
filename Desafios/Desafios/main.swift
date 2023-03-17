@@ -34,7 +34,7 @@ class LivroDigital: Livro {
             return "Livro barato"
         }
         
-        print(analisarPreco("Código Limpo", 15))
+//        print(analisarPreco("Código Limpo", 15))
     }
 }
 
@@ -121,7 +121,7 @@ número.
 
 // 1) Exercicio Vendedor:
 
-/* Um vendedor de loja possui nome, idade, cpf, saldo em conta e ele vende em sua loja ternos, vestidos e bonés, defina um método(quantidadeDePecas: Int, tipoDePeça: String).
+/* Um vendedor de loja possui nome, idade, cpf, saldo em conta e ele vende em sua loja ternos e vestido defina um método(quantidadeDePecas: Int, tipoDePeça: String).
 
 - Cada terno custa 400 reais, caso o cliente compre 3 ou mais ternos ele recebe 50 por cento de desconto em cada
  
@@ -132,10 +132,53 @@ número.
 
 ----------------------------- encapsule todos os métodos necessarios ---------------------- */
 
+class Vendedor {
+    
+    var name: String
+    var age: Int
+    var cpf: String
+    var saldoEmConta: Double
+    
+    init(name: String, age: Int, cpf: String, saldoEmConta: Double) {
+        self.name = name
+        self.age = age
+        self.cpf = cpf
+        self.saldoEmConta = saldoEmConta
+    }
+    
+    func vender (quantidadeDePecas: Int, tipoDePeca: String) {
+        if tipoDePeca == "Terno" {
+            venderTerno(quantidadeDeTernos: quantidadeDePecas)
+        } else if tipoDePeca == "Vestido" {
+            venderVestido(quantidadeDeVestidos: quantidadeDePecas)
+        } else {
+            print("não temos essa opção")
+        }
+            
+        
+    }
+    
+    private func venderTerno (quantidadeDeTernos: Int) {
+        var desconto: Double = 0
+        if quantidadeDeTernos >= 3 {
+            desconto = Double(50 * quantidadeDeTernos)
+        }
+        saldoEmConta = saldoEmConta + Double(quantidadeDeTernos * 400) - desconto
+    }
+    
+    private func venderVestido(quantidadeDeVestidos:Int) {
+        if quantidadeDeVestidos == 5 {
+            print("Parabéns você ganhou um véu de brinde")
+        }
+        saldoEmConta = saldoEmConta + Double(quantidadeDeVestidos * 900)
+    }
+    
+    
+}
 
-
-
-
+var vendedorVitor: Vendedor = Vendedor(name: "Vitor", age: 27, cpf: "CPF Válido", saldoEmConta: 10000)
+vendedorVitor.vender(quantidadeDePecas: 18, tipoDePeca: "Terno")
+print(vendedorVitor.saldoEmConta)
 
 
 // 2) Exercicio Funcionários:
@@ -150,10 +193,55 @@ número.
 
 -  Use polimorfismo para resolver este problema.  */
 
+class Funcionario {
+    var nome: String
+    var salario: Double
+    var CPF: String
+    
+    init(nome: String, salario: Double, CPF: String) {
+        self.nome = nome
+        self.salario = salario
+        self.CPF = CPF
+        
+    }
+    
+    func bonusAnual () {
+        print("")
+    }
+    
+}
+
+class Programador: Funcionario {
+    
+    var plataformaDeTrabalho: String
+    init (plataformadeTrabalho: String, nome: String, salario: Double, CPF: String) {
+        self.plataformaDeTrabalho = plataformadeTrabalho
+        super.init(nome: nome, salario: salario, CPF: CPF)
+    }
+    override func bonusAnual() {
+        print("Seu bônus é de 20%, sendo assim o valor do seu bonus é de: \(salario * 12 * 0.2)")
+    }
+}
+
+class Designer: Funcionario {
+    
+    var plataformaDeTrabalho: String
+    init (plataformadeTrabalho: String, nome: String, salario: Double, CPF: String) {
+        self.plataformaDeTrabalho = plataformadeTrabalho
+        super.init(nome: nome, salario: salario, CPF: CPF)
+    }
+    override func bonusAnual() {
+        print("Seu bônus é de 15%, sendo assim o valor do seu bonus é de: \(salario * 12 * 0.15)")
+    }
+}
 
 
+var iOSDeveloper: Programador = Programador(plataformadeTrabalho: "Xcode", nome: "Vitor", salario: 4500, CPF: "CPF Válido")
+
+iOSDeveloper.bonusAnual()
 
 
+var felipeDesigner: Designer = Designer(plataformadeTrabalho: "Figma", nome: "Felipe", salario: 4500, CPF: "CPF Válido")
 
 
 // 3) Exercicio Veículo:
@@ -171,3 +259,17 @@ número.
  
           Aviao: quantidade de passageiros * distancia */
 
+
+class Veiculo {
+    var cor: String
+    var preco: Int
+    var quantidadeDePasseiros: Int
+    
+    init(cor: String, preco: Int, quantidadeDePasseiros: Int) {
+        self.cor = cor
+        self.preco = preco
+        self.quantidadeDePasseiros = quantidadeDePasseiros
+    }
+    
+    
+}
