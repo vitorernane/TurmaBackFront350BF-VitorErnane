@@ -21,16 +21,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="emZ-lE-kd9">
+                                <rect key="frame" x="20" y="121" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="tSP-EG-ScE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0Tr-Ha-I6X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tSP-EG-ScE" secondAttribute="trailing" constant="20" id="1tQ-cy-qcz"/>
+                            <constraint firstItem="emZ-lE-kd9" firstAttribute="top" secondItem="tSP-EG-ScE" secondAttribute="bottom" constant="20" id="CZ4-JR-4IV"/>
+                            <constraint firstItem="emZ-lE-kd9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OPc-Va-kDk"/>
                             <constraint firstItem="tSP-EG-ScE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gei-xz-1LP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="emZ-lE-kd9" secondAttribute="trailing" constant="20" id="gue-SG-S4Z"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="emZ-lE-kd9" id="6NK-yZ-9hM"/>
                         <outlet property="nameTextField" destination="tSP-EG-ScE" id="7Rd-sM-0rT"/>
                     </connections>
                 </viewController>
