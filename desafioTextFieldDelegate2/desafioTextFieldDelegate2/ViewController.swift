@@ -30,28 +30,28 @@ class ViewController: UIViewController {
         passwordTextField.delegate = self
         passwordAgainTextField.delegate = self
         
-        nameTextField.placeholder = "Nome"
+        //configuração das cores do Placeholder
+        
         let placeHolderNameTextField = NSAttributedString (string: "Nome", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         
         nameTextField.attributedPlaceholder = placeHolderNameTextField
         
-        //configuração das cores do Placeholder
         
-        adressTextField.placeholder = "Endereço"
         let placeHolderAdressTextField = NSAttributedString (string: "Endereço", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         
         adressTextField.attributedPlaceholder = placeHolderAdressTextField
         
         
-        passwordTextField.placeholder = "Senha"
-        let placeHolderPasswordTextField = NSAttributedString (string: "Nome", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        let placeHolderPasswordTextField = NSAttributedString (string: "Senha", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         
         passwordTextField.attributedPlaceholder = placeHolderPasswordTextField
         
-        passwordAgainTextField.placeholder = "Digite a senha novamente"
-        let placeHolderPasswordAgainTextField = NSAttributedString (string: "Nome", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        
+        let placeHolderPasswordAgainTextField = NSAttributedString (string: "Digite sua senha novamente", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         
         passwordAgainTextField.attributedPlaceholder = placeHolderPasswordAgainTextField
+        
+        //configuração das cores e do botão cadastrar
         
         registerButton.layer.backgroundColor = UIColor(red: 0.906, green: 0, blue: 0.494, alpha: 1).cgColor
         registerButton.layer.cornerRadius = 10
