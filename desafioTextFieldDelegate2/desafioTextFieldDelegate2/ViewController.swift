@@ -61,6 +61,8 @@ class ViewController: UIViewController {
 
     @IBAction func registerActionButton(_ sender: Any) {
         
+        registerButton.isEnabled = true
+        
         print("Cadastro realizado com sucesso!")
         
     }
