@@ -66,7 +66,7 @@ extension ViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         print("textFieldDidBeginEditing")
         
-        textField.layer.borderColor = UIColor.systemPink.cgColor
+        textField.layer.borderColor = UIColor.systemCyan.cgColor
         textField.layer.borderWidth = 5
         
         
