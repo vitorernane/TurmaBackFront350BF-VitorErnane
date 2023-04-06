@@ -23,36 +23,37 @@ class ViewController: UIViewController {
         configTextField()
         configRegisterButton()
         validateTextField()
+        hideKeyboardWhenTappedAround()
         
     }
 
     func configTextField() {
         
         nameTextField.delegate = self
-        let placeHolderNameTextField = NSAttributedString (string: "Digite seu nome:", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        let placeHolderNameTextField = NSAttributedString (string: "Nome", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         
         nameTextField.attributedPlaceholder = placeHolderNameTextField
         
    /* ------------------------------------------------------------------------------------ */
         adressTextField.delegate = self
-        let placeHolderAdressTextField = NSAttributedString (string: "Digite seu endereço:", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        let placeHolderAdressTextField = NSAttributedString (string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         
         adressTextField.attributedPlaceholder = placeHolderAdressTextField
+        adressTextField.keyboardType = .emailAddress
         
    /* ------------------------------------------------------------------------------------ */
         passTextField.delegate = self
-        let placeHolderPassTextField = NSAttributedString (string: "Digite sua senha:", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        let placeHolderPassTextField = NSAttributedString (string: "Senha", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         
         passTextField.attributedPlaceholder = placeHolderPassTextField
         passTextField.isSecureTextEntry = true
         
    /* ------------------------------------------------------------------------------------ */
         passwordAgainTextField.delegate = self
-        let placeHolderPasswordAgainTextField = NSAttributedString (string: "Confirme sua senha:", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        let placeHolderPasswordAgainTextField = NSAttributedString (string: "Confirme sua senha", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         
         passwordAgainTextField.attributedPlaceholder = placeHolderPasswordAgainTextField
         passwordAgainTextField.isSecureTextEntry = true
-        
         
     }
     
@@ -86,7 +87,16 @@ class ViewController: UIViewController {
     
     @IBAction func tappedRegisterButton(_ sender: Any) {
         
-        print("Cadastro realizado com sucesso! :)")
+        let alert: UIAlertController = UIAlertController(title: "Parabéns!", message: "Seu cadastro foi realizado com sucesso", preferredStyle: .alert)
+        
+        let action: UIAlertAction = UIAlertAction(title: "Sair", style: .cancel) {
+            (action)in
+            print("você clicou no botão sair")
+        }
+        
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+        
         
     }
     
