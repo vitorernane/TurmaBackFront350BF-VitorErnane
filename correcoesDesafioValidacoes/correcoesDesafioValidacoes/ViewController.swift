@@ -89,12 +89,19 @@ class ViewController: UIViewController {
         
         let alert: UIAlertController = UIAlertController(title: "Parabéns!", message: "Seu cadastro foi realizado com sucesso", preferredStyle: .alert)
         
-        let action: UIAlertAction = UIAlertAction(title: "Sair", style: .cancel) {
+        let action: UIAlertAction = UIAlertAction(title: "Sair", style: .destructive) {
             (action)in
             print("você clicou no botão sair")
         }
         
+        let action2: UIAlertAction = UIAlertAction(title: "Continuar", style: .default) {
+            (action)in
+            print("você clicou no botão continuar")
+        }
+        
+        alert.addAction(action2)
         alert.addAction(action)
+        
         self.present(alert, animated: true, completion: nil)
         
         
