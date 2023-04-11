@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="navegacao" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5G7-o6-vtX">
+                                <rect key="frame" x="155.33333333333334" y="404.66666666666669" width="79.333333333333343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela 02"/>
+                                <connections>
+                                    <action selector="tappedShowTela02Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h48-ll-A9R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPY-Qd-dgF">
+                                <rect key="frame" x="155.33333333333334" y="464.66666666666669" width="79.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela 03"/>
+                                <connections>
+                                    <action selector="tappedShowTelaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KO8-QT-oco"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fPY-Qd-dgF" firstAttribute="top" secondItem="5G7-o6-vtX" secondAttribute="bottom" constant="25" id="2Uq-MX-Ve2"/>
+                            <constraint firstItem="5G7-o6-vtX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OBd-yV-9SA"/>
+                            <constraint firstItem="fPY-Qd-dgF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XBb-vn-F0m"/>
+                            <constraint firstItem="5G7-o6-vtX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h5V-Yy-seA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="ZFx-US-YZz" kind="show" identifier="showTela02" id="nT8-gA-hRR"/>
+                        <segue destination="14i-rw-4NT" kind="show" identifier="showTela03" id="W6g-Lq-M6P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="263" y="18"/>
+        </scene>
+        <!--tela02ViewController-->
+        <scene sceneID="hIf-xE-IRp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="tela02ViewController" id="ZFx-US-YZz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="53H-k8-cba"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4iT-BH-yfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="18"/>
+        </scene>
+        <!--Tela03ViewController-->
+        <scene sceneID="blP-LM-Iq4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tela03ViewController" id="14i-rw-4NT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MVD-bk-1hR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0x-ZT-lCq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="85"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
