@@ -10,7 +10,7 @@
 		6357FF1429E4F90100075047 /* Tela03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357FF1329E4F90100075047 /* Tela03ViewController.swift */; };
 		6357FF1629E4F91600075047 /* Tela03ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6357FF1529E4F91600075047 /* Tela03ViewController.storyboard */; };
 		6357FF1929E72D6500075047 /* Tela04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357FF1829E72D6500075047 /* Tela04ViewController.swift */; };
-		6357FF1B29E72D6F00075047 /* Tela04ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6357FF1A29E72D6F00075047 /* Tela04ViewController.storyboard */; };
+		6357FF1D29E73B5D00075047 /* Tela04ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6357FF1C29E73B5D00075047 /* Tela04ViewController.storyboard */; };
 		6371898729E4959F004819BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371898629E4959F004819BE /* AppDelegate.swift */; };
 		6371898929E4959F004819BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371898829E4959F004819BE /* SceneDelegate.swift */; };
 		6371898B29E4959F004819BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371898A29E4959F004819BE /* ViewController.swift */; };
@@ -25,7 +25,7 @@
 		6357FF1329E4F90100075047 /* Tela03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03ViewController.swift; sourceTree = "<group>"; };
 		6357FF1529E4F91600075047 /* Tela03ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela03ViewController.storyboard; sourceTree = "<group>"; };
 		6357FF1829E72D6500075047 /* Tela04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela04ViewController.swift; sourceTree = "<group>"; };
-		6357FF1A29E72D6F00075047 /* Tela04ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela04ViewController.storyboard; sourceTree = "<group>"; };
+		6357FF1C29E73B5D00075047 /* Tela04ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela04ViewController.storyboard; sourceTree = "<group>"; };
 		6371898329E4959F004819BE /* navegacao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navegacao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6371898629E4959F004819BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6371898829E4959F004819BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				6357FF1829E72D6500075047 /* Tela04ViewController.swift */,
-				6357FF1A29E72D6F00075047 /* Tela04ViewController.storyboard */,
+				6357FF1C29E73B5D00075047 /* Tela04ViewController.storyboard */,
 			);
 			path = Tela04;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6371899E29E4F0E2004819BE /* tela02ViewController.storyboard in Resources */,
-				6357FF1B29E72D6F00075047 /* Tela04ViewController.storyboard in Resources */,
+				6357FF1D29E73B5D00075047 /* Tela04ViewController.storyboard in Resources */,
 				6371899329E495A0004819BE /* LaunchScreen.storyboard in Resources */,
 				6357FF1629E4F91600075047 /* Tela03ViewController.storyboard in Resources */,
 				6371899029E495A0004819BE /* Assets.xcassets in Resources */,

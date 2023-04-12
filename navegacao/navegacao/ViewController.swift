@@ -26,5 +26,17 @@ class ViewController: UIViewController {
         let vc: Tela03ViewController? = UIStoryboard(name: "Tela03ViewController", bundle: nil).instantiateViewController(withIdentifier: "Tela03ViewController") as? Tela03ViewController
         present(vc ?? UIViewController(), animated: true)
     }
+    
+    
+    //MARK: - Adicionando uma navegação através do navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+    
+    @IBAction func tappedShowTela04Button(_ sender: UIButton) {
+        
+        let vc: Tela04ViewController? = UIStoryboard(name: "Tela04ViewController", bundle: nil).instantiateViewController(withIdentifier: "Tela04ViewController") as? Tela04ViewController
+        vc?.modalPresentationStyle = .automatic
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+        
+    }
+    
 }
 
