@@ -43,23 +43,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="ZFx-US-YZz" kind="show" identifier="showTela02" id="nT8-gA-hRR"/>
                         <segue destination="14i-rw-4NT" kind="show" identifier="showTela03" id="W6g-Lq-M6P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="263" y="18"/>
-        </scene>
-        <!--tela02ViewController-->
-        <scene sceneID="hIf-xE-IRp">
-            <objects>
-                <viewControllerPlaceholder storyboardName="tela02ViewController" id="ZFx-US-YZz" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="53H-k8-cba"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4iT-BH-yfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="912" y="18"/>
         </scene>
         <!--Tela03ViewController-->
         <scene sceneID="blP-LM-Iq4">

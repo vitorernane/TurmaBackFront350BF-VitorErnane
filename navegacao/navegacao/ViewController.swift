@@ -16,7 +16,9 @@ class ViewController: UIViewController {
 
     @IBAction func tappedShowTela02Button(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "showTela02", sender: nil)
+        let vc: Tela02ViewController? = UIStoryboard(name: "tela02ViewController", bundle: nil).instantiateViewController(withIdentifier: "Tela02ViewController") as? Tela02ViewController
+        present(vc ?? UIViewController(), animated: true)
+        
     }
     
     @IBAction func tappedShowTelaButton(_ sender: UIButton) {
