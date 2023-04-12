@@ -17,12 +17,14 @@ class ViewController: UIViewController {
     @IBAction func tappedShowTela02Button(_ sender: UIButton) {
         
         let vc: Tela02ViewController? = UIStoryboard(name: "tela02ViewController", bundle: nil).instantiateViewController(withIdentifier: "Tela02ViewController") as? Tela02ViewController
+        vc?.modalPresentationStyle = .automatic
         present(vc ?? UIViewController(), animated: true)
         
     }
     
     @IBAction func tappedShowTelaButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "showTela03", sender: nil)
+        let vc: Tela03ViewController? = UIStoryboard(name: "Tela03ViewController", bundle: nil).instantiateViewController(withIdentifier: "Tela03ViewController") as? Tela03ViewController
+        present(vc ?? UIViewController(), animated: true)
     }
 }
 
