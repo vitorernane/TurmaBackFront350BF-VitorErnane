@@ -11,9 +11,12 @@ class Tela04ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "tela 04"
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func tappedHomeButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }

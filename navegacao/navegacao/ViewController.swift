@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     @IBAction func tappedShowTelaButton(_ sender: UIButton) {
         let vc: Tela03ViewController? = UIStoryboard(name: "Tela03ViewController", bundle: nil).instantiateViewController(withIdentifier: "Tela03ViewController") as? Tela03ViewController
-        present(vc ?? UIViewController(), animated: true)
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
     
     

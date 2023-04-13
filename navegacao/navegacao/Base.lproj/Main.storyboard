@@ -32,12 +32,12 @@
                                     <action selector="tappedShowTelaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KO8-QT-oco"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGg-j6-rYs">
-                                <rect key="frame" x="155" y="517.66666666666663" width="80" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LP-LH-EiG">
+                                <rect key="frame" x="155" y="524.66666666666663" width="80" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Tela 04"/>
                                 <connections>
-                                    <action selector="tappedShowTela04Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rOb-bt-SRF"/>
+                                    <action selector="tappedShowTela04Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Drx-Oi-eVM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,10 +45,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fPY-Qd-dgF" firstAttribute="top" secondItem="5G7-o6-vtX" secondAttribute="bottom" constant="25" id="2Uq-MX-Ve2"/>
-                            <constraint firstItem="vGg-j6-rYs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MjM-AE-mho"/>
+                            <constraint firstItem="0LP-LH-EiG" firstAttribute="top" secondItem="fPY-Qd-dgF" secondAttribute="bottom" constant="25.329999999999998" id="CaA-rO-VBe"/>
                             <constraint firstItem="5G7-o6-vtX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OBd-yV-9SA"/>
-                            <constraint firstItem="vGg-j6-rYs" firstAttribute="top" secondItem="fPY-Qd-dgF" secondAttribute="bottom" constant="18" id="TeK-FX-uGJ"/>
                             <constraint firstItem="fPY-Qd-dgF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XBb-vn-F0m"/>
+                            <constraint firstItem="0LP-LH-EiG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gZH-Ea-Sqs"/>
                             <constraint firstItem="5G7-o6-vtX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h5V-Yy-seA"/>
                         </constraints>
                     </view>

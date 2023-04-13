@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPX-cO-SPg">
-                                <rect key="frame" x="51" y="109" width="40" height="40"/>
+                                <rect key="frame" x="67" y="94.666666666666671" width="56" height="55.000000000000014"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="HBV-Sp-FQ0"/>
-                                    <constraint firstAttribute="width" constant="40" id="X7o-us-MjT"/>
+                                    <constraint firstAttribute="height" constant="55" id="9YK-bT-ShP"/>
+                                    <constraint firstAttribute="width" constant="56" id="CmC-Zf-jDG"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -35,9 +35,8 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZPX-cO-SPg" secondAttribute="trailing" constant="299" id="8ZY-Sy-oTr"/>
-                            <constraint firstItem="ZPX-cO-SPg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="62" id="mkh-2i-Yto"/>
-                            <constraint firstItem="ZPX-cO-SPg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="51" id="p8t-R2-s9n"/>
+                            <constraint firstItem="ZPX-cO-SPg" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="-100" id="WXr-BO-Ljr"/>
+                            <constraint firstItem="ZPX-cO-SPg" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-300" id="c7Y-KO-sel"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -11,6 +11,8 @@
 		6357FF1629E4F91600075047 /* Tela03ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6357FF1529E4F91600075047 /* Tela03ViewController.storyboard */; };
 		6357FF1929E72D6500075047 /* Tela04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357FF1829E72D6500075047 /* Tela04ViewController.swift */; };
 		6357FF1D29E73B5D00075047 /* Tela04ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6357FF1C29E73B5D00075047 /* Tela04ViewController.storyboard */; };
+		6357FF2029E7528F00075047 /* Tela05ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357FF1F29E7528F00075047 /* Tela05ViewController.swift */; };
+		6357FF2229E7529F00075047 /* Tela05ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6357FF2129E7529F00075047 /* Tela05ViewController.storyboard */; };
 		6371898729E4959F004819BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371898629E4959F004819BE /* AppDelegate.swift */; };
 		6371898929E4959F004819BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371898829E4959F004819BE /* SceneDelegate.swift */; };
 		6371898B29E4959F004819BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371898A29E4959F004819BE /* ViewController.swift */; };
@@ -26,6 +28,8 @@
 		6357FF1529E4F91600075047 /* Tela03ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela03ViewController.storyboard; sourceTree = "<group>"; };
 		6357FF1829E72D6500075047 /* Tela04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela04ViewController.swift; sourceTree = "<group>"; };
 		6357FF1C29E73B5D00075047 /* Tela04ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela04ViewController.storyboard; sourceTree = "<group>"; };
+		6357FF1F29E7528F00075047 /* Tela05ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela05ViewController.swift; sourceTree = "<group>"; };
+		6357FF2129E7529F00075047 /* Tela05ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela05ViewController.storyboard; sourceTree = "<group>"; };
 		6371898329E4959F004819BE /* navegacao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navegacao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6371898629E4959F004819BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6371898829E4959F004819BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,15 @@
 			path = Tela04;
 			sourceTree = "<group>";
 		};
+		6357FF1E29E7527B00075047 /* Tela05 */ = {
+			isa = PBXGroup;
+			children = (
+				6357FF1F29E7528F00075047 /* Tela05ViewController.swift */,
+				6357FF2129E7529F00075047 /* Tela05ViewController.storyboard */,
+			);
+			path = Tela05;
+			sourceTree = "<group>";
+		};
 		6371897A29E4959F004819BE = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 				6371899A29E4F0B2004819BE /* Tela02 */,
 				6357FF1229E4F8DA00075047 /* Tela03 */,
 				6357FF1729E72D3F00075047 /* Tela04 */,
+				6357FF1E29E7527B00075047 /* Tela05 */,
 				6371898629E4959F004819BE /* AppDelegate.swift */,
 				6371898829E4959F004819BE /* SceneDelegate.swift */,
 				6371898A29E4959F004819BE /* ViewController.swift */,
@@ -168,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6371899E29E4F0E2004819BE /* tela02ViewController.storyboard in Resources */,
+				6357FF2229E7529F00075047 /* Tela05ViewController.storyboard in Resources */,
 				6357FF1D29E73B5D00075047 /* Tela04ViewController.storyboard in Resources */,
 				6371899329E495A0004819BE /* LaunchScreen.storyboard in Resources */,
 				6357FF1629E4F91600075047 /* Tela03ViewController.storyboard in Resources */,
@@ -187,6 +202,7 @@
 				6371898B29E4959F004819BE /* ViewController.swift in Sources */,
 				6371898729E4959F004819BE /* AppDelegate.swift in Sources */,
 				6371898929E4959F004819BE /* SceneDelegate.swift in Sources */,
+				6357FF2029E7528F00075047 /* Tela05ViewController.swift in Sources */,
 				6357FF1929E72D6500075047 /* Tela04ViewController.swift in Sources */,
 				6357FF1429E4F90100075047 /* Tela03ViewController.swift in Sources */,
 			);
