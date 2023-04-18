@@ -13,6 +13,8 @@
 		6357FF5D29EEBE1800075047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6357FF5B29EEBE1800075047 /* Main.storyboard */; };
 		6357FF5F29EEBE1A00075047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6357FF5E29EEBE1A00075047 /* Assets.xcassets */; };
 		6357FF6229EEBE1A00075047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6357FF6029EEBE1A00075047 /* LaunchScreen.storyboard */; };
+		6357FF6B29EEBEEC00075047 /* Tela02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357FF6A29EEBEEC00075047 /* Tela02ViewController.swift */; };
+		6357FF6D29EEBEFB00075047 /* Tela02ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6357FF6C29EEBEFB00075047 /* Tela02ViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6357FF5E29EEBE1A00075047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6357FF6129EEBE1A00075047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6357FF6329EEBE1A00075047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6357FF6A29EEBEEC00075047 /* Tela02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02ViewController.swift; sourceTree = "<group>"; };
+		6357FF6C29EEBEFB00075047 /* Tela02ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela02ViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		6357FF5429EEBE1800075047 /* DesafioNavigationLifeCycle */ = {
 			isa = PBXGroup;
 			children = (
+				6357FF6929EEBED700075047 /* Tela02 */,
 				6357FF5529EEBE1800075047 /* AppDelegate.swift */,
 				6357FF5729EEBE1800075047 /* SceneDelegate.swift */,
 				6357FF5929EEBE1800075047 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				6357FF6329EEBE1A00075047 /* Info.plist */,
 			);
 			path = DesafioNavigationLifeCycle;
+			sourceTree = "<group>";
+		};
+		6357FF6929EEBED700075047 /* Tela02 */ = {
+			isa = PBXGroup;
+			children = (
+				6357FF6A29EEBEEC00075047 /* Tela02ViewController.swift */,
+				6357FF6C29EEBEFB00075047 /* Tela02ViewController.storyboard */,
+			);
+			path = Tela02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6357FF6229EEBE1A00075047 /* LaunchScreen.storyboard in Resources */,
+				6357FF6D29EEBEFB00075047 /* Tela02ViewController.storyboard in Resources */,
 				6357FF5F29EEBE1A00075047 /* Assets.xcassets in Resources */,
 				6357FF5D29EEBE1800075047 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6357FF6B29EEBEEC00075047 /* Tela02ViewController.swift in Sources */,
 				6357FF5A29EEBE1800075047 /* ViewController.swift in Sources */,
 				6357FF5629EEBE1800075047 /* AppDelegate.swift in Sources */,
 				6357FF5829EEBE1800075047 /* SceneDelegate.swift in Sources */,
