@@ -9,11 +9,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    func configTableView() {
+        
+        //configurar os protocolos
+        tableView.delegate = self
+        tableView.dataSource = self
+        //registrar a celula
+        
     }
 
-
+    
 }
 
+extension ViewController: UITableViewDelegate {
+    
+}
+
+extension ViewController: UITableViewDataSource {
+    
+}
